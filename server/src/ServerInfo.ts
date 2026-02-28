@@ -15,5 +15,5 @@ export interface IServerInfo {
 export let serverInfo: IServerInfo;
 
 const rawInfo: string =
-    fs.readFileSync(path.join(__dirname, "../serverInfo.json")).toString();
+    fs.readFileSync(path.join(__dirname, "../gmail.json")).toString();
 serverInfo = JSON.parse(rawInfo);
